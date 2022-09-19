@@ -1,46 +1,43 @@
 @import 'variables'
-@import 'ultilities'
-
-
+@import 'utilities'
+  
 @include reset
 
-#main-banner 
-    background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)),url('../img/office.jpg')
-    height: 85vh
-    background-size: cover
-    background-position: center
+#main-banner
+  background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/office.jpg')
+  height: 85vh
+  background-size: cover 
+  background-position: center
 
-.nav-container
+  .nav-container
     display: flex
-    justify-content: space-between       
+    justify-content: space-between
     position: fixed
     top: 0
     left: 0
     width: 100%
-    padding: 1.5rem, 2rem
+    padding: 1.5rem 2rem
     background-color: $black
     z-index: 10
 
     .brand
-        color: $light-color
-        font-size: 2rem
-        @include main-hover
+      color: $light-color
+      font-size: 2rem
+      @include main-hover
 
+    &-navbar
+      display: flex
+      align-items: center
+      height: 100%
 
-    &-navbar 
-        display: flex
-        align-items: center
-        height: 100%
+      li
+        margin: 5px 10px
 
-        li
-            margin: 5px 10px
+        a
+          color: $light-color
+          @include main-hover
 
-            a
-                color: $light-color
-                @include main-hover
-
-
-    .fas.fa-bars 
-        font-size: 2rem
-        color: #fff
-        display: none
+    .fas.fa-bars
+      font-size: 2rem
+      color: #FFF
+      display: none
