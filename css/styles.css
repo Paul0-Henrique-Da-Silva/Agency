@@ -1,3 +1,7 @@
+#main-banner .title-container h1, #main-banner .title-container h2 {
+  text-shadow: 3px 2px #black;
+}
+
 .btn {
   padding: 0.6rem 1rem;
   border: 1px solid #fff;
@@ -82,6 +86,21 @@ li {
   font-size: 2rem;
   color: #FFF;
   display: none;
+}
+#main-banner .title-container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#main-banner .title-container h2 {
+  font-size: 3rem;
+}
+#main-banner .title-container h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
