@@ -2,6 +2,12 @@
   text-shadow: 3px 2px #black;
 }
 
+.services-container h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .btn {
   padding: 0.6rem 1rem;
   border: 1px solid #fff;
@@ -101,6 +107,43 @@ li {
 #main-banner .title-container h1 {
   font-size: 4rem;
   margin-top: 1rem;
+}
+
+.services-container {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.services-container .services-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.services-container .services-card-container .services-card {
+  width: 30%;
+  margin: 1%;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+.services-container .services-card-container .services-card i {
+  color: #ff5200;
+  font-size: 4rem;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.services-container .services-card-container .services-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.services-container .services-card-container .services-card p {
+  color: #8b8e94;
+}
+.services-container .services-card-container .services-card:hover {
+  border: transparent;
+  box-shadow: 0 1px 10px #ccc;
 }
 
 /*# sourceMappingURL=styles.css.map */
