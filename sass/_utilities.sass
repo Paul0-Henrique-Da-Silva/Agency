@@ -12,6 +12,20 @@
   li 
     list-style: none        
 
+
+@mixin card-mobile
+    width: 100%
+    heigth: 200px
+    margin: 0
+    margin-bottom: 2rem  
+  
+
+//modile
+@mixin mobile
+  @media (max-width: 425px)
+    @content  
+
+
 // place holder selectors
 %title-text-shadow
   text-shadow: 3px 2px #black            
@@ -30,11 +44,15 @@
   .job-card-cover
     opacity: 0
 
+  @include mobile 
+    opacity: 1
+        
   &:hover
     .job-card-title,
     .job-card-cover,
     .job-card-description
       opacity: 1 
+
 
 @mixin main-hover 
   transition: .3s
